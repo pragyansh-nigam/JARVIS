@@ -15,7 +15,7 @@ voices = engine.getProperty('voices')
 print(voices[0].id)
 engine.setProperty('voice',voices[0].id)
 
-p = 'H:\\MOVIES\\SRK MOVIES & SHOWS\\FAN.mp4'
+p = 'E:\\MOVIES\\SRK MOVIES & SHOWS\\FAN.mp4'
 
 def speak(audio):
     print(audio)
@@ -95,7 +95,7 @@ if __name__ == "__main__":
 
         elif 'play music' in data:
             speak("playing music")
-            music_dir = 'H:\\django\\mymusic\\assets\\audio'
+            music_dir = 'E:\\django\\mymusic\\assets\\audio'
             songs = os.listdir(music_dir)
             #print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
@@ -131,7 +131,7 @@ if __name__ == "__main__":
 
         elif 'open teamviewer' in data:
             speak("opening team viewer")
-            path = 'C:\\Program Files (x86)\\TeamViewer\\TeamViewer.exe'
+            path = 'C:\\Program Files\\TeamViewer\\TeamViewer.exe'
             os.startfile(path)
 
         elif 'open github' in data:
@@ -142,7 +142,7 @@ if __name__ == "__main__":
             
         elif 'open projects' in data:
             speak("opening projects")
-            path = 'H:\\django'
+            path = 'E:\\django'
             os.startfile(path)
         
         elif 'watch movie' in data:
@@ -152,7 +152,7 @@ if __name__ == "__main__":
 
         elif 'open game' in data:
         	speak("opening game")
-        	path = 'H:\\MAX PAYNE 2 THE FALL OF MAX PAYNE\\Max Payne 2\\MaxPayne2.exe'
+        	path = 'E:\\GAMES\\MAX PAYNE 2 THE FALL OF MAX PAYNE\\Max Payne 2\\MaxPayne2.exe'
         	os.startfile(path)
 
         elif 'open git' in data:
@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
         elif 'open sublime text' in data:
         	speak('opening sublime text')
-        	path = 'C:\\Program Files (x86)\\Sublime Text 3\\sublime_text.exe'
+        	path = 'C:\\Program Files\\Sublime Text 3\\sublime_text.exe'
         	os.startfile(path)
         
         elif 'exit' in data:
