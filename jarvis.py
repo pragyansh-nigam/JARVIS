@@ -47,16 +47,16 @@ def recordAudio():
 def start():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
-        speak("Good Morning Nigam")
+        speak("Good Morning Pragyansh Nigam")
     
     elif hour>=12 and hour<=15:
-        speak("Good Afternoon Pragyansh")
+        speak("Good Afternoon Pragyansh Nigam")
 
     elif hour>=16 and hour<23:
-        speak("Good Evening Pragyansh")
+        speak("Good Evening Pragyansh Nigam")
     
     else:
-        speak("Good Night Pragyansh")
+        speak("Good Night Pragyansh Nigam")
 
     speak("I am your new friend, what can I do for you?")
 
